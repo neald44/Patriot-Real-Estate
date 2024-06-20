@@ -3,21 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
 
 }
-
+:root{
+    --red: #d60018;
+    --white: #fafcf8;
+    --blue: #0a4d84;
+    --lightblue: #a7afad;
+    --biege: #f6cb74;
+}
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Header / Navbar */
 
 header{
-    background-color: #fff;
-    color: #000;
+    background-color: var(--blue);
+    color: var(--white);
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -29,25 +35,64 @@ header{
     flex-direction: row;
     align-items: center;
     padding: 1rem, 3rem;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 .navlink{
     text-decoration: none;
-    color: #2c2c2c;
+    color: var(--white);
     font-size: 1.5rem;
 }
 .navlink-active{
-    color: #000;
+    color: var(--white);
     font-weight: bold;
+    transform: scale(1.2);
 }
 .navlink:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
 .action-btn{
-    background-color: #000;
-    color: #fff;
+    background-color: var(--red);
+    color: var(--white);
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
+
+/* Phones */
+@media only screen and(min-width: 600px){
+#navbar{
+    display: none;
+}
+#logo{
+    width: 300px;
+}
+#mobilemenu{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem, 3rem;
+    gap: 2rem;
+}
+#mobilemenu-icon{
+    
+}
+}
+
+/* Tablets */
+
+
+@media only screen and(min-width: 768px){
+
+}
+
+/* Desktops */
+
+@media only screen and(min-width: 1024px){
+
+}
+
+/* Large Desktops */
