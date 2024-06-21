@@ -23,19 +23,22 @@ h1{
     line-height: 1.2;
     margin-bottom: 1rem;
     line-height: .8;
+    padding-bottom: 1rem;
 }
 h2{
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: var(--biege)
+    color: var(--biege);
+    padding-bottom: 1rem;
 }
 p{
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 1rem;
     line-height: 1.7;
+    padding-bottom: 1rem;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -45,6 +48,7 @@ body{
     margin: 0 auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    text-align: center;
 }
 
 /* Header / Navbar */
@@ -168,11 +172,12 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    height: 700px;
+    height: 1000px;
     content: ' ';
 }
 #different-text{
     width: 50%;
+    text-align: left;
 }
 #different-subtitle{
     transform: rotate(-15deg);
@@ -323,9 +328,6 @@ header{
 .card p{
     padding-bottom: 3rem;
 }
-.card h1{
-    padding-bottom: 1rem;
-}
 .card{
     display: flex;
     flex-direction: column;
@@ -357,7 +359,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    height: 800px;
+    height: 1000px;
     content: ' ';   
 }
 .bio-text{
@@ -369,7 +371,34 @@ header{
     transform: rotate(-5deg);
     translate: -75px -30px;
 }
+.towns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.gallery{
+    background-image: url(./images/pexels-yuraforrat-20823497.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    content: ' ';
+    color: var(--white);
+    justify-content: center;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.397);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
 
+}
 
 
 
