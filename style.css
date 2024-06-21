@@ -13,29 +13,63 @@
     --white: #fafcf8;
     --blue: #0a4d84;
     --lightblue: #a7afad;
-    --biege: #f6cb74;
+    --biege: #c59533;
+    --accentblue: #0a4d8410;
+    --accentbiege: #e7d4ae;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    line-height: .8;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--biege)
+}
+p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    line-height: 1.7;
 }
 body{
     font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 /* Header / Navbar */
 
 header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--blue);
     color: var(--white);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navcontainer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
-.container{
-    width: 80%;
-    padding: 3rem;
+    width: 90%;
+    padding: 1rem;
 }
 #logo{
     width: 400px;
-    padding: 1rem;
 }
 #navbar{
     display: flex;
@@ -47,6 +81,7 @@ header{
     text-decoration: none;
     color: var(--white);
     font-size: 1.5rem;
+    white-space: nowrap;
 }
 .navlink-active{
     color: var(--white);
@@ -60,12 +95,14 @@ header{
 .action-btn{
     background-color: var(--red);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
     border: none;
     font-size: 1.5rem;
     text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
 }
 #mobilemenu{
     display: none;
@@ -85,6 +122,259 @@ header{
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
+
+/* Hero Section */
+
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accentblue);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    height: 80vh;
+    width: 100%;
+}
+#hero-text{
+    text-align: left;
+    background-color: var(--white);
+    width: 50%;
+    padding: 4rem;
+}
+#hero-title{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+#statement{
+    text-align: center;
+}
+#different{
+    display: flex;
+    flex-direction: row;
+}
+#different-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7rem;
+}
+#different-img{
+    background-image: url(./images/lori-different.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 700px;
+    content: ' ';
+}
+#different-text{
+    width: 50%;
+}
+#different-subtitle{
+    transform: rotate(-15deg);
+    translate: -100px -70px;
+}
+#different-p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+.cover-image{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./images/lori-different.jpg);
+    background-attachment: fixed;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    content: ' ';
+    text-align: center;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.cover-image h2{
+    color: var(--white);
+}
+#bp-text-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: left;
+    padding: 1rem;
+    height: 80vh;
+    gap: 2rem;
+}
+#bp-text-area{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: left;
+    padding: 2rem;
+    width: 50%;
+}
+#bp-img{
+    background-image: url(./images/lori-different.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 700px;
+    content: ' ';
+}
+.accordian{
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    border-bottom: 1px solid var(--white);
+}
+.active,.accordion:hover{
+    background-color: var(--biege);
+}
+.accordian-content{
+    padding: 0 18px;
+    background-color: var(--white);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-in-out;
+}
+
+/* Advice Section */
+#advice{
+    background-color: var(--accentbiege);
+}
+#advice-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    height: 80vh;
+    gap: 2rem;
+}
+#advice-img{
+    background-image: url(./images/lori-different.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 700px;
+    content: ' ';
+}
+#advice-text{
+    text-align: left;
+    width: 50%;
+}
+#advice-text p, #advice-text h1, #advice-text h2{
+    padding: 1.5rem 0;
+}
+#buy-sell-rent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+#working-together-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    width: 75%;
+}
+#work-together-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.card p{
+    padding-bottom: 3rem;
+}
+.card h1{
+    padding-bottom: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 400px;
+    height: 600px;
+}
+.side-borders{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+/* Bio Section */
+#bio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: left;
+    padding: 1rem;
+    height: 80vh;
+    gap: 2rem;
+}
+.bio-img{
+    background-image: url(/images/lori-different.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 800px;
+    content: ' ';   
+}
+.bio-text{
+    text-align: left;
+    width: 50%;
+    padding: 4rem;
+}
+.bio-text h2{
+    transform: rotate(-5deg);
+    translate: -75px -30px;
+}
+
+
+
+
+/* Media Querys */
+
 /* Phones */
 
 @media only screen and (min-width: 480px){
@@ -132,3 +422,15 @@ header{
 }
 
 /* Large Desktops */
+
+@media only screen and (min-width: 1200px){
+#navbar{
+    display: flex;
+}
+#logo{
+    width: 500px;
+}
+#mobilemenu-icon{
+    display: none;
+}
+}
