@@ -24,17 +24,23 @@ body{
 header{
     background-color: var(--blue);
     color: var(--white);
-    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+.container{
+    width: 80%;
+    padding: 3rem;
+}
+#logo{
+    width: 400px;
+    padding: 1rem;
+}
 #navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1rem, 3rem;
     gap: 2rem;
 }
 .navlink{
@@ -61,38 +67,68 @@ header{
     font-size: 1.5rem;
     text-decoration: none;
 }
-
-/* Phones */
-@media only screen and(min-width: 600px){
-#navbar{
-    display: none;
-}
-#logo{
-    width: 300px;
-}
 #mobilemenu{
     display: none;
     flex-direction: row;
     align-items: center;
-    padding: 1rem, 3rem;
     gap: 2rem;
+    height: 100vw;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 #mobilemenu-icon{
-    
+    display: none;
+}
+#mobilemenu-icon:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+/* Phones */
+
+@media only screen and (min-width: 480px){
+#navbar{
+    display: none;
+}
+#logo{
+    width: 200px;
+}
+
+#mobilemenu-icon{
+    display: flex;
 }
 }
 
 /* Tablets */
 
 
-@media only screen and(min-width: 768px){
+@media only screen and (min-width: 935px){
+    #navbar{
+        display: none;
+    }
+    #logo{
+        width: 300px;
+    }
+    #mobilemenu-icon{
+        display: flex;
+        
+    }
 
 }
 
 /* Desktops */
 
-@media only screen and(min-width: 1024px){
-
+@media only screen and (min-width: 900px){
+#navbar{
+    display: flex;
+}
+#logo{
+    width: 400px;
+}
+#mobilemenu-icon{
+    display: none;
+}
 }
 
 /* Large Desktops */
