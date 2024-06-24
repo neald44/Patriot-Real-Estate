@@ -88,7 +88,7 @@
                 <div class="accordian-content">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui optio ut voluptate maxime. Ad.</p>
                 </div>
-
+                500px
                 <button class="accordian">Section 4</button>
                 <div class="accordian-content">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui optio ut voluptate maxime. Ad.</p>
