@@ -7,34 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navcontainer">
-            <img src="./images/Patriot-Real-Estate,-LLC-white-high-res-cropped.png" alt="Company Logo" id="logo" class="logo">
-            <div></div>
-            <div></div>
-            <div></div>
-            <nav id="navbar">
-                <a href="index.html" class="navlink navlink-active">Home</a>
-                <a href="about.html" class="navlink">About</a>
-                <a href="contact.html" class="navlink">Contact Us</a>
-                <div id="action-item">
-                    <a href="tel:+16066828949" id="callUs" class="action-btn" >Call Now</a>
-                </div>
-                <div id="mobilemenu-icon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div id="mobilemenu">
-                    <a href="index.html" class="navlink navlink-active">Home</a>
-                    <a href="about.html" class="navlink">About</a>
-                    <a href="contact.html" class="navlink">Contact Us</a>
-                    <a href="tel:+16066828949" class="action-btn" >Call Now</a>
-                    
-                </div>
-            </nav>
-        </div>       
-    </header>
+    <?php include 'includes/header.php';?>
     <section id="hero" class="flex-column">
         <div class="container flex-start">
             <div class="block content-50">
@@ -88,7 +61,6 @@
                 <div class="accordian-content">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui optio ut voluptate maxime. Ad.</p>
                 </div>
-                500px
                 <button class="accordian">Section 4</button>
                 <div class="accordian-content">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui optio ut voluptate maxime. Ad.</p>
@@ -180,12 +152,7 @@
     <div id="scrollToTop">
         <div class="arrow"><p>^</p></div>
     </div>
-    <footer id="footer" class="flex-column gap">
-        <div id="copyright">
-            <p>Copyright &copy; <span id="copyYear"></span> Patriot Real Estate LLC</p>
-        </div>
-
-    </footer>
+    <?php include 'includes/footer.php';?>
 
     
 

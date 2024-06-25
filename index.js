@@ -14,11 +14,6 @@ for (i = 0; i < accordian.length; i++) {
     });
 }
 
-// For Copyright Year
-
-var currentYear = new Date().getFullYear();
-document.getElementById('copyYear').innerText = currentYear;
-
 // For Scroll To Top
 
 window.onscroll = function() {scrollFunction()};
