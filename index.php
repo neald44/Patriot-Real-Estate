@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patriot Real Estate LLC</title>
     <link rel="stylesheet" href="style.css?<?php echo time(); ?>">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/df37463b0d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main id="main">
     <?php include 'includes/header.php';?>
-    <nav id="mobile-nav" class="mobile-nav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <?php include './includes/nav-list.php'; ?>
-</nav>
-    <section id="hero">
+        <section id="hero">
         <div class="flex-row container">
             <div class="flex-item flex-column hero-text">
                 <h1>This is your Hero Hook Statement</h1>
