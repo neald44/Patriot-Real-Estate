@@ -31,3 +31,18 @@ function topFunction() {
 }
 const scrollTop = document.getElementById('scrollToTop');
 scrollTop.addEventListener('click', topFunction);
+
+// For Mobile Menu
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mobile-nav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mobile-nav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "var(--white)";
+  }

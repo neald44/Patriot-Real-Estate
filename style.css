@@ -13,6 +13,9 @@
     --accentblue: #0a4d8410;
     --accentbiege: #e7d4ae;
 }
+body{
+    background-color: var(--white);
+}
 h1{
     font-size: 3rem;
     font-weight: 700;
@@ -139,24 +142,8 @@ header{
     cursor: pointer;
     white-space: nowrap;
 }
-#mobilemenu{
+.icon{
     display: none;
-    background-color: var(--blue);
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    height: 100vw;
-    width: 300px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-#mobilemenu-icon{
-    display: none;
-}
-#mobilemenu-icon:hover{
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
 }
 /* Hero Section */
 #hero{
@@ -334,9 +321,61 @@ header{
     padding: 1rem;
 }
 /* Media Querys */
+
 @media screen and (max-width: 900px) {
     .nav{
         display: none;
     }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+    }
+    .icon{
+        display: flex;
+        color: var(--white);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .mobile-nav{
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        background-color: var(--blue); /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        display: flex;
+        flex-direction: column;
+
+      }
+      .mobile-nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: var(--white);
+        display: block;
+        transition: 0.3s;
+      }
+      .mobile-nav a:hover {
+        background-color: var(--white);
+        color: var(--blue);
+      }
+      .mobile-nav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
     
 }
