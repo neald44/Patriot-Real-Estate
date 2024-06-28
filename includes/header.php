@@ -1,20 +1,22 @@
 <header>
-    <div class="flex-row container header-container">
-        <img src="./images/Patriot-Real-Estate,-LLC-white-high-res-cropped.png" alt="Company Logo" class="logo">
+    <div id="header-1"class="flex-row container header-container">
+        <div class="logo-div">
+            <img src="./images/Patriot-Real-Estate,-LLC-white-high-res-cropped.png" alt="Company Logo" class="logo">
+        </div>
         <nav class="nav">
             <?php include 'includes/nav-list.php';?>
             <div class="action-item">
                 <a href="tel:+16066828949" id="callUs" class="action-btn" >Call Now</a>
             </div>
         </nav>
-        <span class="icon" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
-        <nav id="mobile-nav" class="mobile-nav">
-            <?php include './includes/nav-list.php'; ?>
-            <div class="action-item">
-                <a hrefrem ipsum dolor, sit amet conse="tel:+16066828949" id="callUs" class="action-btn" >Call Now</a>
-            </div>
-        </nav>
-    </div>       
+            <span class="icon" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            <nav id="mobile-nav" class="mobile-nav">
+                <?php include './includes/nav-list.php'; ?>
+                <div class="action-item">
+                    <a href="tel:+16066828949" id="callUs" class="action-btn" >Call Now</a>
+                </div>
+            </nav>
+    </div>
     <script type="text/JavaScript">
         // For Mobile Menu
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
