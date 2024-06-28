@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df37463b0d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php include 'includes/header.php';?>

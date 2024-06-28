@@ -19,25 +19,21 @@ body{
 h1{
     font-size: 3rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    line-height: .8;
+    line-height: 1;
     padding-bottom: 1rem;
 }
 h2{
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1rem;
     color: var(--biege);
     padding-bottom: 1rem;
 }
 p{
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    line-height: 1.7;
+    font-size: 1.6rem;
+    line-height: 1.2;
     padding-bottom: 1rem;
+    font-weight: 500;
 }
 img{
     max-width: 100%;
@@ -65,6 +61,9 @@ img{
 .flex-item{
     flex: 1;
 }
+.extra{
+    flex: .5;
+}
 .flex-start{
     justify-content: flex-start;
     gap: 2rem;;
@@ -79,8 +78,8 @@ img{
     display: block;
 }
 .h2-angle{
-    transform: rotate(-15deg) skew(-191deg);
-    translate: -2rem -3.5rem;
+    transform: rotate(-10deg) skew(-191deg);
+    translate: -2rem -1rem;
 }
 .flex-wrap{
     flex-wrap: wrap;
@@ -132,6 +131,9 @@ header{
     transform: scale(1.2);
     font-style: bold;
 }
+.closebtn{
+    display: none;
+}
 .action-btn{
     background-color: var(--red);
     text-decoration: none;
@@ -148,12 +150,15 @@ header{
 .mobile-nav{
     display: none;
 }
+#section{
+    padding: 2rem 0;
+}
 /* Hero Section */
 #hero{
     background-image: url(/images/lori-different.jpg);
     background-position: 35% 35%;
     object-fit: contain;
-    min-height: 600px;
+    min-height: 700px;
     padding: 2rem;
 }
 .hero-text{
@@ -164,17 +169,28 @@ header{
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.26);
     border-radius: 20px;
-    padding: 2rem;
     flex: .8;
+    min-width: 350px;
+    padding: 1rem;
+}
+#hero h1{
+    max-width: 300px;
+}
+#hero p{
+    max-width: 300px;
 }
 /* Statement Section */
+#statement{
+    padding: 4rem 0;
+}
 .statement-text{
     text-align: center;
+    /* height: 600px; */
 }
-
 /* Different section */
 #different{
     background-color: var(--lightblue);
+    padding-top: 4rem;
 }
 .different-img{
     object-fit: contain;
@@ -190,11 +206,12 @@ header{
 }
 .quote-container{
     text-align: center;
-    padding: 5rem;
     color: var(--white);
     font-size: 1.8rem;
     font-weight: 700;
     white-space: nowrap;
+    max-width: 800px;
+    height: 500px;
 }
 .quote-heading{
     color: var(--white)
@@ -243,6 +260,9 @@ header{
     min-width: 400px;
 }
 /* Work Together section */
+#work-together-text{
+    max-width: 800px;
+}
 .card p{
     padding-bottom: 3rem;
 }
@@ -266,6 +286,9 @@ header{
     min-width: 400px;
 }
 /* Locations Section */
+#locations p{
+    max-width: 1100px;
+}
 .towns{
     display: flex;
     flex-direction: row;
@@ -281,8 +304,8 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     content: ' ';
     color: var(--white);
     justify-content: center;
@@ -315,6 +338,8 @@ header{
 }
 .arrow{
     padding: 2rem;
+    color: var(--white);
+    font-size: 36px;
 }
 #footer{
     background-color: var(--blue);
@@ -357,12 +382,10 @@ header{
         right: 0;
         background-color: var(--blue); /* Black*/
         overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
         display: flex;
         flex-direction: column;
         text-align: center;
-
       }
       .mobile-nav a {
         padding: 8px 8px 8px 32px;
@@ -371,17 +394,14 @@ header{
         color: var(--white);
         display: block;
         transition: 0.3s;
-      }rem ipsum dolor, sit amet conse
+      }
       .mobile-nav a:hover {
-        background-color: var(--white);
-        color: var(--blue);
+        /* background-color: var(--white); */
+        transform: scale(1.2);
       }
       .mobile-nav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
         font-size: 36px;
-        margin-left: 50px;
+        text-align: right;
       }
 
     
