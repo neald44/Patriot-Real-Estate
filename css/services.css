@@ -19,5 +19,9 @@
     color: var(--white);
 }
 #system img{
-    max-width: 400;
+    min-width: 400;
+    max-height: 600px;
+}
+#work-together-text{
+    text-align: center;
 }

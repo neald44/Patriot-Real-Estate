@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include 'includes/head.php';?>
     <title>Patriot Real Estate LLC</title>
-    <link rel="stylesheet" href="style.css?<?php echo time(); ?>">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-    <script src="https://kit.fontawesome.com/df37463b0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css?<?php echo time();?>">
 </head>
 <body>
     <main id="main">
@@ -90,7 +87,7 @@
             <div id="advice-img" class="flex-item">
                 <img src="./images/lori-different.jpg" alt="" class="advice-img">
             </div>
-            <div class="flex-item min-width left flex-column">
+            <div id='advice-text' class="flex-item min-width left">
                 <h2>Insights for Buyers, Sellers, and Investors</h2>
                 <h1>Navigating the Real Estate Market: Expert Advice</h1>
                 <p>Entering the real estate market can be daunting, but with the right guidance, it becomes a rewarding journey. For buyers, prioritize understanding your financial readiness and research neighborhoods thoroughly to find the right fit. Sellers should focus on preparing their property for sale, setting a competitive price, and leveraging effective marketing strategies. Investors should analyze market trends, consider long-term growth potential, and conduct thorough due diligence. Whether buying, selling, or investing, staying informed and working with experienced professionals like Patriot Real Estate LLC ensures informed decisions and successful outcomes.</p>
@@ -131,7 +128,7 @@
             <div class="bio-img min-width flex-item">
                 <img src="./images/bio-img.JPG" alt="Picture of Joel and Lori Marcum" class="bio-img">
             </div>
-            <div id="bio-text" class="min-width left flex-item flex-column">
+            <div id="bio-text" class="min-width left flex-item">
                 <h2 class="h2-angle">Sub-Heading</h2>
                 <h1>We are Joel and Lori Marcum</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ex, ea quo voluptatum sint repellat cum neque inventore eligendi magnam pariatur repudiandae quos libero dolorum facere illo animi officiis alias eos deleniti dolorem! Quam repellat cumque sit aperiam error voluptatum.</p>
