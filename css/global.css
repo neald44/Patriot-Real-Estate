@@ -61,6 +61,9 @@ img{
 .flex-item{
     flex: 1;
 }
+.flex-400{
+    flex: 1 1 400px;
+}
 .extra{
     flex: .5;
 }
@@ -80,6 +83,8 @@ img{
 .h2-angle{
     transform: rotate(-10deg) skew(-191deg);
     translate: -2rem -2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 .flex-wrap{
     flex-wrap: wrap;

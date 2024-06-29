@@ -25,3 +25,37 @@
 #work-together-text{
     text-align: center;
 }
+#quote{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/lori-different.jpg);
+    background-attachment: fixed;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quote-container{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+    max-width: 800px;
+    height: 500px;
+}
+.quote-heading{
+    color: var(--white)
+}
+#quote blockquote{
+    max-width: 800px;
+    text-wrap: wrap;
+    line-height: 1.9rem;
+}
+.cover-image h2{
+    color: var(--white);
+}
+#advice{
+    background-color: var(--accentblue);
+}
+#advice-img{
+    min-width: 400px;
+    object-fit: contain;
+}

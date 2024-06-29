@@ -163,9 +163,7 @@
             </div>
         </div>
     </section>
-    <div id="scrollToTop">
-        <div class="arrow"><i class="fa-solid fa-arrow-up"></i></div>
-    </div>
+    
     </main>
     <?php include 'includes/footer.php';?>
     

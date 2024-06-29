@@ -66,7 +66,26 @@
             </div>
         </div>
     </section>
-
+    <section id="quote">
+        <div class="container flex-column quote-container">
+            <h2 class="quote-heading">Messages from our Clients</h2>
+            <blockquote class="">"This is our second time using Lori. The second time was just as fabulous as the first! Her communication, hard work and dedication don't go unnoticed. We wouldn't be able to sell our home without her! If you are looking to buy or sell your home, she's your gal!"<br>
+            <br>-Sean and Lindsay Morgan</blockquote>
+        </div>
+    </section>
+    <section id="advice">
+        <div id="advice-container" class="container flex-row">
+            <div id="advice-img" class="flex-400">
+                <img src="./images/lori-different.jpg" alt="" class="advice-img">
+            </div>
+            <div id='advice-text' class="flex-400 min-width left">
+                <h2 class="h2-angle">Ready to get started?</h2>
+                <h1>Next step heading</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus consectetur beatae sint sunt, ut cumque quae minima libero incidunt sapiente. Facilis cumque, voluptate earum dignissimos rerum ab tempore consequatur, qui facere expedita nobis ratione accusamus commodi officiis dolores sunt quae praesentium? Minus reiciendis at id ipsum odio necessitatibus ipsa delectus quia, dignissimos esse et assumenda architecto dolore fugiat provident nesciunt magnam saepe? Nemo laboriosam a eius dolor molestias voluptatibus vitae, totam accusamus quia alias, officia facilis, nostrum autem mollitia deleniti iure hic? Distinctio laborum atque nemo quod vero hic, repellendus ipsa sapiente nisi accusantium quis consectetur illum, quam, sunt itaque!</p>
+                <a href="tel:+16066828949" class="action-btn" >Call Now</a>
+            </div>
+        </div>
+    </section>
     </main>
     <?php include 'includes/footer.php';?>
     <script src="script.js"></script>

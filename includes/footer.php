@@ -29,5 +29,27 @@
                 <?php echo "<p>Copyright &copy; " . date("Y") . " Patriot Real Estate LLC</p>"; ?>
         </div>
     </div>
-
 </footer>
+<div id="scrollToTop">
+        <div class="arrow"><i class="fa-solid fa-arrow-up"></i></div>
+    </div>
+    <script type="text/JavaScript">
+   
+   // For Scroll To Top
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("scrollToTop").style.display = "block";
+    } else {
+        document.getElementById("scrollToTop").style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+const scrollTop = document.getElementById('scrollToTop');
+scrollTop.addEventListener('click', topFunction);
+    </script>
