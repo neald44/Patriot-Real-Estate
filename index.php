@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patriot Real Estate LLC</title>
     <link rel="stylesheet" href="style.css?<?php echo time(); ?>">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <script src="https://kit.fontawesome.com/df37463b0d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -34,7 +35,7 @@
             <div id="different-img" class="flex-item different-img">
                 <img src="./images/lori-different.jpg" alt="" class="different-img">
             </div>
-            <div id="different-text" class="left flex-item flex-column">
+            <div id="different-text" class="left flex-item">
                 <h2 class="h2-angle">Veteran-Owned, Client-Focused</h2>
                 <h1>Experience the Patriot Difference</h1>
                 <p>At Patriot Real Estate LLC, our veteran-owned status sets us apart from other real estate firms. Our core values of integrity, dedication, and service are deeply ingrained in everything we do. We bring a unique perspective and disciplined approach to the real estate market, ensuring that our clients receive exceptional service and unwavering commitment. By choosing Patriot Real Estate LLC, you’re partnering with a team that understands the value of hard work, loyalty, and putting clients first. Discover the difference with a firm that treats every transaction as a mission to be accomplished.</p>
