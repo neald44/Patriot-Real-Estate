@@ -1,0 +1,23 @@
+#hero{
+    background-image: url(../images/lori-different.jpg);
+    background-position: 35% 35%;
+    object-fit: contain;
+    min-height: 700px;
+    padding: 2rem;
+}
+.hero-container{
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.468);
+    max-width:fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+}
+.hero-container h1{
+    color: var(--white);
+}
+#system img{
+    max-width: 400;
+}
