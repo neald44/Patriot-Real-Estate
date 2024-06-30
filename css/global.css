@@ -12,27 +12,53 @@
     --accentblue: #0a4d8410;
     --accentbiege: #e7d4ae;
 }
+
+/* Google Font Dancing Script */
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700*/
+.dancing-script-h2 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Google Font Montserrat */
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900*/
+.montserrat-font{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
 body{
     background-color: var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 h1{
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
     padding-bottom: 1rem;
+    line-height: 1;
 }
 h2{
-    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
     font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
     line-height: 1.2;
     color: var(--biege);
     padding-bottom: 1rem;
 }
 p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.2;
     padding-bottom: 1rem;
-    font-weight: 500;
 }
 img{
     max-width: 100%;
@@ -82,7 +108,7 @@ img{
 }
 .h2-angle{
     transform: rotate(-10deg) skew(-191deg);
-    translate: -2rem -2rem;
+    translate: -1rem -2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
@@ -139,6 +165,9 @@ header{
 .logo-div{
     flex: 0 1 400px;
 }
+.logo{
+    min-width: 200px;
+}
 .nav{
     display: flex;
     gap: 1rem;
@@ -147,21 +176,21 @@ header{
 .nav-list{
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     color: var(--white);
     font-size: 1.5rem;
 }
-.navlink{
+.nav a, .footer-nav a{
     text-decoration: none;
     color: var(--white);
     font-size: 1.5rem;
     white-space: nowrap;
     transition: .3s ease-in-out;
 }
-.navlink:hover{
-    transform: scale(1.2);
+.nav li:hover, .footer-nav li:hover{
+    transition: .3s ease-in-out;
 }
-.nav ul>li>a:hover{
+#nav li:hover, .footer-nav li:hover{
     transform: scale(1.2);
 }
 .navlink-active{
@@ -260,14 +289,6 @@ header{
     width: 100%;
 }
 /* Media Querys */
-
-@media screen and (min-width: 900px) {
-    .navlink a:hover{
-        transform: scale(1.2);
-    }
-    
-}
-
 @media screen and (max-width: 900px) {
     .nav{
         display: none;
@@ -311,7 +332,6 @@ header{
         transition: 0.3s;
       }
       .mobile-nav a:hover {
-        /* background-color: var(--white); */
         transform: scale(1.2);
       }
       .mobile-nav .closebtn {

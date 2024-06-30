@@ -62,16 +62,17 @@
     text-align: center;
     color: var(--white);
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 500;
     white-space: nowrap;
-    max-width: 800px;
+    max-width: 1000px;
     height: 500px;
 }
 .quote-heading{
-    color: var(--white)
+    color: var(--white);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 #quote blockquote{
-    max-width: 800px;
     text-wrap: wrap;
     line-height: 1.9rem;
 }
@@ -126,6 +127,9 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
+}
+.card{
+    height: 845px;
 }
 /* Bio Section */
 .bio-img{
